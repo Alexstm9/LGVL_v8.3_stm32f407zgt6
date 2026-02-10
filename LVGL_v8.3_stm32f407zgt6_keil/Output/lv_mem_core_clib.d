@@ -1,0 +1,13 @@
+..\..\output\lv_mem_core_clib.o: ..\..\Middlewares\LVGL\GUI\lvgl\src\stdlib\clib\lv_mem_core_clib.c
+..\..\output\lv_mem_core_clib.o: ..\..\Middlewares\LVGL\GUI\lvgl\src\stdlib\clib\../lv_mem.h
+..\..\output\lv_mem_core_clib.o: ..\..\Middlewares\LVGL\GUI\lvgl\src\stdlib\clib\../../lv_conf_internal.h
+..\..\output\lv_mem_core_clib.o: ..\..\Middlewares\LVGL\GUI\lvgl\src\stdlib\clib\../../lv_conf_kconfig.h
+..\..\output\lv_mem_core_clib.o: ..\..\Middlewares\LVGL\GUI\lvgl\examples\porting\../../lv_conf.h
+..\..\output\lv_mem_core_clib.o: ..\..\Middlewares\LVGL\GUI\lvgl\src\stdlib\clib\../lv_string.h
+..\..\output\lv_mem_core_clib.o: ..\..\Middlewares\LVGL\GUI\lvgl\src\stdlib\clib\../../misc/lv_types.h
+..\..\output\lv_mem_core_clib.o: E:\program\Keil\MDK\ARM\ARMCC\Bin\..\include\stdint.h
+..\..\output\lv_mem_core_clib.o: E:\program\Keil\MDK\ARM\ARMCC\Bin\..\include\stddef.h
+..\..\output\lv_mem_core_clib.o: E:\program\Keil\MDK\ARM\ARMCC\Bin\..\include\stdbool.h
+..\..\output\lv_mem_core_clib.o: E:\program\Keil\MDK\ARM\ARMCC\Bin\..\include\inttypes.h
+..\..\output\lv_mem_core_clib.o: E:\program\Keil\MDK\ARM\ARMCC\Bin\..\include\limits.h
+..\..\output\lv_mem_core_clib.o: E:\program\Keil\MDK\ARM\ARMCC\Bin\..\include\stdarg.h

@@ -1,0 +1,17 @@
+..\..\output\decomp_raw.o: ..\..\Middlewares\LVGL\GUI\lvgl\src\libs\frogfs\src\decomp_raw.c
+..\..\output\decomp_raw.o: ..\..\Middlewares\LVGL\GUI\lvgl\src\libs\frogfs\src\../../../lv_conf_internal.h
+..\..\output\decomp_raw.o: ..\..\Middlewares\LVGL\GUI\lvgl\src\libs\frogfs\src\../../../lv_conf_kconfig.h
+..\..\output\decomp_raw.o: ..\..\Middlewares\LVGL\GUI\lvgl\examples\porting\../../lv_conf.h
+..\..\output\decomp_raw.o: E:\program\Keil\MDK\ARM\ARMCC\Bin\..\include\stddef.h
+..\..\output\decomp_raw.o: E:\program\Keil\MDK\ARM\ARMCC\Bin\..\include\stdint.h
+..\..\output\decomp_raw.o: ..\..\Middlewares\LVGL\GUI\lvgl\src\libs\frogfs\src\../../../stdlib/lv_string.h
+..\..\output\decomp_raw.o: ..\..\Middlewares\LVGL\GUI\lvgl\src\libs\frogfs\src\../../../stdlib/../misc/lv_types.h
+..\..\output\decomp_raw.o: E:\program\Keil\MDK\ARM\ARMCC\Bin\..\include\stdbool.h
+..\..\output\decomp_raw.o: E:\program\Keil\MDK\ARM\ARMCC\Bin\..\include\inttypes.h
+..\..\output\decomp_raw.o: E:\program\Keil\MDK\ARM\ARMCC\Bin\..\include\limits.h
+..\..\output\decomp_raw.o: E:\program\Keil\MDK\ARM\ARMCC\Bin\..\include\stdarg.h
+..\..\output\decomp_raw.o: ..\..\Middlewares\LVGL\GUI\lvgl\src\libs\frogfs\src\../../../misc/lv_fs.h
+..\..\output\decomp_raw.o: ..\..\Middlewares\LVGL\GUI\lvgl\src\libs\frogfs\src\frogfs_priv.h
+..\..\output\decomp_raw.o: ..\..\Middlewares\LVGL\GUI\lvgl\src\libs\frogfs\src\../include/frogfs/frogfs_types.h
+..\..\output\decomp_raw.o: ..\..\Middlewares\LVGL\GUI\lvgl\src\libs\frogfs\src\../include/frogfs/frogfs.h
+..\..\output\decomp_raw.o: ..\..\Middlewares\LVGL\GUI\lvgl\src\libs\frogfs\src\frogfs_format.h
