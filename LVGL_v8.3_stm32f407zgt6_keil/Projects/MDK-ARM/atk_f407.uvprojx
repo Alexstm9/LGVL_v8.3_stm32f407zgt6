@@ -336,7 +336,7 @@
               <MiscControls></MiscControls>
               <Define>USE_HAL_DRIVER,STM32F407xx</Define>
               <Undefine></Undefine>
-              <IncludePath>..\..\User;..\..\Drivers;..\..\Drivers\CMSIS\Device\ST\STM32F4xx\Include;..\..\Drivers\CMSIS\Include;..\..\Drivers\STM32F4xx_HAL_Driver\Inc;..\..\Middlewares;..\..\Middlewares\LVGL\GUI;..\..\Middlewares\LVGL\GUI\lvgl;..\..\Middlewares\LVGL\GUI\lvgl\src;..\..\Middlewares\LVGL\GUI\lvgl\examples\porting;..\..\Drivers\BSP\LCD;..\..\Drivers\BSP\TOUCH</IncludePath>
+              <IncludePath>..\..\User;..\..\Drivers;..\..\Drivers\CMSIS\Device\ST\STM32F4xx\Include;..\..\Drivers\CMSIS\Include;..\..\Drivers\STM32F4xx_HAL_Driver\Inc;..\..\Middlewares;..\..\Middlewares\LVGL\GUI;..\..\Middlewares\LVGL\GUI\lvgl;..\..\Middlewares\LVGL\GUI\lvgl\src;..\..\Middlewares\LVGL\GUI\lvgl\examples\porting;..\..\Drivers\BSP\LCD;..\..\Drivers\BSP\TOUCH;..\..\Middlewares\LVGL\GUI_APP\demos;..\..\Middlewares\LVGL\GUI_APP\demos\stress;..\..\Middlewares\LVGL\GUI_APP\demos\widgets;..\..\Middlewares\LVGL\GUI_APP;..\..\Middlewares\LVGL\GUI_APP\demos\widgets\assets</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -1304,6 +1304,78 @@
         </Group>
         <Group>
           <GroupName>Middlewares/lvgl/src/gpu</GroupName>
+          <Files>
+            <File>
+              <FileName>lv_draw_sdl.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\Middlewares\LVGL\GUI\lvgl\src\draw\sdl\lv_draw_sdl.c</FilePath>
+            </File>
+            <File>
+              <FileName>lv_draw_sdl_arc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\Middlewares\LVGL\GUI\lvgl\src\draw\sdl\lv_draw_sdl_arc.c</FilePath>
+            </File>
+            <File>
+              <FileName>lv_draw_sdl_bg.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\Middlewares\LVGL\GUI\lvgl\src\draw\sdl\lv_draw_sdl_bg.c</FilePath>
+            </File>
+            <File>
+              <FileName>lv_draw_sdl_composite.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\Middlewares\LVGL\GUI\lvgl\src\draw\sdl\lv_draw_sdl_composite.c</FilePath>
+            </File>
+            <File>
+              <FileName>lv_draw_sdl_img.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\Middlewares\LVGL\GUI\lvgl\src\draw\sdl\lv_draw_sdl_img.c</FilePath>
+            </File>
+            <File>
+              <FileName>lv_draw_sdl_label.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\Middlewares\LVGL\GUI\lvgl\src\draw\sdl\lv_draw_sdl_label.c</FilePath>
+            </File>
+            <File>
+              <FileName>lv_draw_sdl_layer.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\Middlewares\LVGL\GUI\lvgl\src\draw\sdl\lv_draw_sdl_layer.c</FilePath>
+            </File>
+            <File>
+              <FileName>lv_draw_sdl_line.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\Middlewares\LVGL\GUI\lvgl\src\draw\sdl\lv_draw_sdl_line.c</FilePath>
+            </File>
+            <File>
+              <FileName>lv_draw_sdl_mask.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\Middlewares\LVGL\GUI\lvgl\src\draw\sdl\lv_draw_sdl_mask.c</FilePath>
+            </File>
+            <File>
+              <FileName>lv_draw_sdl_polygon.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\Middlewares\LVGL\GUI\lvgl\src\draw\sdl\lv_draw_sdl_polygon.c</FilePath>
+            </File>
+            <File>
+              <FileName>lv_draw_sdl_rect.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\Middlewares\LVGL\GUI\lvgl\src\draw\sdl\lv_draw_sdl_rect.c</FilePath>
+            </File>
+            <File>
+              <FileName>lv_draw_sdl_stack_blur.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\Middlewares\LVGL\GUI\lvgl\src\draw\sdl\lv_draw_sdl_stack_blur.c</FilePath>
+            </File>
+            <File>
+              <FileName>lv_draw_sdl_texture_cache.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\Middlewares\LVGL\GUI\lvgl\src\draw\sdl\lv_draw_sdl_texture_cache.c</FilePath>
+            </File>
+            <File>
+              <FileName>lv_draw_sdl_utils.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\Middlewares\LVGL\GUI\lvgl\src\draw\sdl\lv_draw_sdl_utils.c</FilePath>
+            </File>
+          </Files>
         </Group>
         <Group>
           <GroupName>Middlewares/lvgl/src/hal</GroupName>
@@ -1522,6 +1594,36 @@
               <FileName>lv_textarea.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\..\Middlewares\LVGL\GUI\lvgl\src\widgets\lv_textarea.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>Middlewares/LVGL/GUI_APP</GroupName>
+          <Files>
+            <File>
+              <FileName>lv_demo_stress.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\Middlewares\LVGL\GUI_APP\demos\stress\lv_demo_stress.c</FilePath>
+            </File>
+            <File>
+              <FileName>lv_demo_widgets.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\Middlewares\LVGL\GUI_APP\demos\widgets\lv_demo_widgets.c</FilePath>
+            </File>
+            <File>
+              <FileName>img_clothes.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\Middlewares\LVGL\GUI_APP\demos\widgets\assets\img_clothes.c</FilePath>
+            </File>
+            <File>
+              <FileName>img_demo_widgets_avatar.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\Middlewares\LVGL\GUI_APP\demos\widgets\assets\img_demo_widgets_avatar.c</FilePath>
+            </File>
+            <File>
+              <FileName>img_lvgl_logo.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\Middlewares\LVGL\GUI_APP\demos\widgets\assets\img_lvgl_logo.c</FilePath>
             </File>
           </Files>
         </Group>

@@ -70,12 +70,13 @@ virtualFolder:
         - name: lvgl
           files: []
           folders:
-            - name: examples
+            - name: example
               files: []
               folders:
                 - name: porting
                   files:
                     - path: ../../Middlewares/LVGL/GUI/lvgl/examples/porting/lv_port_disp_template.c
+                    - path: ../../Middlewares/LVGL/GUI/lvgl/examples/porting/lv_port_fs_template.c
                     - path: ../../Middlewares/LVGL/GUI/lvgl/examples/porting/lv_port_indev_template.c
                   folders: []
             - name: src
@@ -101,23 +102,42 @@ virtualFolder:
                   folders: []
                 - name: draw
                   files:
+                    - path: ../../Middlewares/LVGL/GUI/lvgl/src/draw/arm2d/lv_gpu_arm2d.c
+                    - path: ../../Middlewares/LVGL/GUI/lvgl/src/draw/sdl/lv_draw_sdl.c
+                    - path: ../../Middlewares/LVGL/GUI/lvgl/src/draw/sdl/lv_draw_sdl_arc.c
+                    - path: ../../Middlewares/LVGL/GUI/lvgl/src/draw/sdl/lv_draw_sdl_bg.c
+                    - path: ../../Middlewares/LVGL/GUI/lvgl/src/draw/sdl/lv_draw_sdl_composite.c
+                    - path: ../../Middlewares/LVGL/GUI/lvgl/src/draw/sdl/lv_draw_sdl_img.c
+                    - path: ../../Middlewares/LVGL/GUI/lvgl/src/draw/sdl/lv_draw_sdl_label.c
+                    - path: ../../Middlewares/LVGL/GUI/lvgl/src/draw/sdl/lv_draw_sdl_layer.c
+                    - path: ../../Middlewares/LVGL/GUI/lvgl/src/draw/sdl/lv_draw_sdl_line.c
+                    - path: ../../Middlewares/LVGL/GUI/lvgl/src/draw/sdl/lv_draw_sdl_mask.c
+                    - path: ../../Middlewares/LVGL/GUI/lvgl/src/draw/sdl/lv_draw_sdl_polygon.c
+                    - path: ../../Middlewares/LVGL/GUI/lvgl/src/draw/sdl/lv_draw_sdl_rect.c
+                    - path: ../../Middlewares/LVGL/GUI/lvgl/src/draw/sdl/lv_draw_sdl_stack_blur.c
+                    - path: ../../Middlewares/LVGL/GUI/lvgl/src/draw/sdl/lv_draw_sdl_texture_cache.c
+                    - path: ../../Middlewares/LVGL/GUI/lvgl/src/draw/sdl/lv_draw_sdl_utils.c
                     - path: ../../Middlewares/LVGL/GUI/lvgl/src/draw/sw/lv_draw_sw.c
                     - path: ../../Middlewares/LVGL/GUI/lvgl/src/draw/sw/lv_draw_sw_arc.c
                     - path: ../../Middlewares/LVGL/GUI/lvgl/src/draw/sw/lv_draw_sw_blend.c
                     - path: ../../Middlewares/LVGL/GUI/lvgl/src/draw/sw/lv_draw_sw_dither.c
                     - path: ../../Middlewares/LVGL/GUI/lvgl/src/draw/sw/lv_draw_sw_gradient.c
                     - path: ../../Middlewares/LVGL/GUI/lvgl/src/draw/sw/lv_draw_sw_img.c
+                    - path: ../../Middlewares/LVGL/GUI/lvgl/src/draw/sw/lv_draw_sw_layer.c
                     - path: ../../Middlewares/LVGL/GUI/lvgl/src/draw/sw/lv_draw_sw_letter.c
                     - path: ../../Middlewares/LVGL/GUI/lvgl/src/draw/sw/lv_draw_sw_line.c
                     - path: ../../Middlewares/LVGL/GUI/lvgl/src/draw/sw/lv_draw_sw_polygon.c
                     - path: ../../Middlewares/LVGL/GUI/lvgl/src/draw/sw/lv_draw_sw_rect.c
+                    - path: ../../Middlewares/LVGL/GUI/lvgl/src/draw/sw/lv_draw_sw_transform.c
                     - path: ../../Middlewares/LVGL/GUI/lvgl/src/draw/lv_draw.c
                     - path: ../../Middlewares/LVGL/GUI/lvgl/src/draw/lv_draw_arc.c
                     - path: ../../Middlewares/LVGL/GUI/lvgl/src/draw/lv_draw_img.c
                     - path: ../../Middlewares/LVGL/GUI/lvgl/src/draw/lv_draw_label.c
+                    - path: ../../Middlewares/LVGL/GUI/lvgl/src/draw/lv_draw_layer.c
                     - path: ../../Middlewares/LVGL/GUI/lvgl/src/draw/lv_draw_line.c
                     - path: ../../Middlewares/LVGL/GUI/lvgl/src/draw/lv_draw_mask.c
                     - path: ../../Middlewares/LVGL/GUI/lvgl/src/draw/lv_draw_rect.c
+                    - path: ../../Middlewares/LVGL/GUI/lvgl/src/draw/lv_draw_transform.c
                     - path: ../../Middlewares/LVGL/GUI/lvgl/src/draw/lv_draw_triangle.c
                     - path: ../../Middlewares/LVGL/GUI/lvgl/src/draw/lv_img_buf.c
                     - path: ../../Middlewares/LVGL/GUI/lvgl/src/draw/lv_img_cache.c
@@ -131,6 +151,7 @@ virtualFolder:
                     - path: ../../Middlewares/LVGL/GUI/lvgl/src/extra/libs/ffmpeg/lv_ffmpeg.c
                     - path: ../../Middlewares/LVGL/GUI/lvgl/src/extra/libs/freetype/lv_freetype.c
                     - path: ../../Middlewares/LVGL/GUI/lvgl/src/extra/libs/fsdrv/lv_fs_fatfs.c
+                    - path: ../../Middlewares/LVGL/GUI/lvgl/src/extra/libs/fsdrv/lv_fs_littlefs.c
                     - path: ../../Middlewares/LVGL/GUI/lvgl/src/extra/libs/fsdrv/lv_fs_posix.c
                     - path: ../../Middlewares/LVGL/GUI/lvgl/src/extra/libs/fsdrv/lv_fs_stdio.c
                     - path: ../../Middlewares/LVGL/GUI/lvgl/src/extra/libs/fsdrv/lv_fs_win32.c
@@ -143,8 +164,15 @@ virtualFolder:
                     - path: ../../Middlewares/LVGL/GUI/lvgl/src/extra/libs/rlottie/lv_rlottie.c
                     - path: ../../Middlewares/LVGL/GUI/lvgl/src/extra/libs/sjpg/lv_sjpg.c
                     - path: ../../Middlewares/LVGL/GUI/lvgl/src/extra/libs/sjpg/tjpgd.c
+                    - path: ../../Middlewares/LVGL/GUI/lvgl/src/extra/libs/tiny_ttf/lv_tiny_ttf.c
+                    - path: ../../Middlewares/LVGL/GUI/lvgl/src/extra/others/fragment/lv_fragment.c
+                    - path: ../../Middlewares/LVGL/GUI/lvgl/src/extra/others/fragment/lv_fragment_manager.c
                     - path: ../../Middlewares/LVGL/GUI/lvgl/src/extra/others/gridnav/lv_gridnav.c
+                    - path: ../../Middlewares/LVGL/GUI/lvgl/src/extra/others/ime/lv_ime_pinyin.c
+                    - path: ../../Middlewares/LVGL/GUI/lvgl/src/extra/others/imgfont/lv_imgfont.c
                     - path: ../../Middlewares/LVGL/GUI/lvgl/src/extra/others/monkey/lv_monkey.c
+                    - path: ../../Middlewares/LVGL/GUI/lvgl/src/extra/others/msg/lv_msg.c
+                    - path: ../../Middlewares/LVGL/GUI/lvgl/src/extra/others/snapshot/lv_snapshot.c
                     - path: ../../Middlewares/LVGL/GUI/lvgl/src/extra/themes/basic/lv_theme_basic.c
                     - path: ../../Middlewares/LVGL/GUI/lvgl/src/extra/themes/default/lv_theme_default.c
                     - path: ../../Middlewares/LVGL/GUI/lvgl/src/extra/themes/mono/lv_theme_mono.c
@@ -204,13 +232,13 @@ virtualFolder:
                   folders: []
                 - name: gpu
                   files:
-                    - path: ../../Middlewares/LVGL/GUI/lvgl/src/draw/stm32_dma2d/lv_gpu_stm32_dma2d.c
                     - path: ../../Middlewares/LVGL/GUI/lvgl/src/draw/sdl/lv_draw_sdl.c
                     - path: ../../Middlewares/LVGL/GUI/lvgl/src/draw/sdl/lv_draw_sdl_arc.c
                     - path: ../../Middlewares/LVGL/GUI/lvgl/src/draw/sdl/lv_draw_sdl_bg.c
                     - path: ../../Middlewares/LVGL/GUI/lvgl/src/draw/sdl/lv_draw_sdl_composite.c
                     - path: ../../Middlewares/LVGL/GUI/lvgl/src/draw/sdl/lv_draw_sdl_img.c
                     - path: ../../Middlewares/LVGL/GUI/lvgl/src/draw/sdl/lv_draw_sdl_label.c
+                    - path: ../../Middlewares/LVGL/GUI/lvgl/src/draw/sdl/lv_draw_sdl_layer.c
                     - path: ../../Middlewares/LVGL/GUI/lvgl/src/draw/sdl/lv_draw_sdl_line.c
                     - path: ../../Middlewares/LVGL/GUI/lvgl/src/draw/sdl/lv_draw_sdl_mask.c
                     - path: ../../Middlewares/LVGL/GUI/lvgl/src/draw/sdl/lv_draw_sdl_polygon.c
@@ -269,6 +297,13 @@ virtualFolder:
                     - path: ../../Middlewares/LVGL/GUI/lvgl/src/widgets/lv_table.c
                     - path: ../../Middlewares/LVGL/GUI/lvgl/src/widgets/lv_textarea.c
                   folders: []
+        - name: LVGL
+          files: []
+          folders:
+            - name: GUI_APP
+              files:
+                - path: ../../Middlewares/LVGL/GUI_APP/demos/stress/lv_demo_stress.c
+              folders: []
 dependenceList: []
 outDir: build
 miscInfo:
@@ -291,6 +326,10 @@ targets:
         - ../../Middlewares/LVGL/GUI/lvgl
         - ../../Middlewares/LVGL/GUI/lvgl/src
         - ../../Middlewares/LVGL/GUI/lvgl/examples/porting
+        - ../../Drivers/BSP/LCD
+        - ../../Drivers/BSP/TOUCH
+        - ../../Middlewares/LVGL/GUI_APP/demos
+        - ../../Middlewares/LVGL/GUI_APP/demos/stress
         - .cmsis/include
         - RTE/_LGVL
       libList: []
@@ -304,7 +343,8 @@ targets:
         options:
           version: 4
           afterBuildTasks: []
-          asm-compiler: {}
+          asm-compiler:
+            defines: []
           beforeBuildTasks: []
           c/cpp-compiler:
             CXX_FLAGS: --diag_suppress=1 --diag_suppress=1295

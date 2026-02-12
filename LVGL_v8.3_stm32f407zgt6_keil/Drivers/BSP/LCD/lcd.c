@@ -785,7 +785,7 @@ void lcd_init(void)
      * 里面(卡死在f_putc函数), 所以, 必须初始化串口1, 或者屏蔽掉下面
      * 这行 printf 语句 !!!!!!!
      */
-    printf("LCD ID:%x\r\n", lcddev.id); /* 打印LCD ID */
+    //printf("LCD ID:%x\r\n", lcddev.id); /* 打印LCD ID */
 
     if (lcddev.id == 0x7789)
     {
@@ -845,6 +845,10 @@ void lcd_init(void)
     lcd_display_dir(0); /* 默认为竖屏 */
     LCD_BL(1);          /* 点亮背光 */
     lcd_clear(WHITE);
+
+    printf("LCD ID: 0x%X\r\n", lcddev.id);
+    printf("Screen size: %d x %d\r\n", lcddev.width, lcddev.height);
+    printf("Screen cleared to white\r\n");
 }
 
 /**

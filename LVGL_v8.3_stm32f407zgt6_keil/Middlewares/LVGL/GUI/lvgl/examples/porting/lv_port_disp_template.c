@@ -18,12 +18,12 @@
  *********************/
 #ifndef MY_DISP_HOR_RES
     ///#warning Please define or replace the macro MY_DISP_HOR_RES with the actual screen width, default value 320 is used for now.
-    #define MY_DISP_HOR_RES    480
+    #define MY_DISP_HOR_RES    800
 #endif
 
 #ifndef MY_DISP_VER_RES
     //#warning Please define or replace the macro MY_DISP_HOR_RES with the actual screen height, default value 240 is used for now.
-    #define MY_DISP_VER_RES    800
+    #define MY_DISP_VER_RES    480
 #endif
 
 /**********************
@@ -100,8 +100,12 @@ void lv_port_disp_init(void)
     /*Set up the functions to access to your display*/
 
     /*Set the resolution of the display*/
-    disp_drv.hor_res = MY_DISP_HOR_RES;
-    disp_drv.ver_res = MY_DISP_VER_RES;
+    // disp_drv.hor_res = MY_DISP_HOR_RES;
+    // disp_drv.ver_res = MY_DISP_VER_RES;
+    // disp_drv.hor_res = 800;
+    // disp_drv.ver_res = 480;
+    disp_drv.hor_res = lcddev.width;
+    disp_drv.ver_res = lcddev.height;
 
     /*Used to copy the buffer's content to the display*/
     disp_drv.flush_cb = disp_flush;
@@ -129,7 +133,8 @@ void lv_port_disp_init(void)
 static void disp_init(void)
 {
   lcd_init();
-  lcd_scan_dir(0);
+  lcd_display_dir(1);
+  printf("Display direction set to horizontal\r\n");  //测试代码
 }
 
 volatile bool disp_flush_enabled = true;
@@ -166,6 +171,7 @@ static void disp_flush(lv_disp_drv_t * disp_drv, const lv_area_t * area, lv_colo
 //            }
 //        }
 //    }
+
     lcd_color_fill(area->x1, area->y1, area->x2, area->y2, (uint16_t *)color_p);
 
     /*IMPORTANT!!!
