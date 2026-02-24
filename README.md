@@ -1,3 +1,5 @@
 # LGVL_v8.3_stm32f407zgt6
 
 基于正点原子模板，将lgvl_v8.3移植到stm32f407zgt6上，同时有keil和cmake版本
+如果遇到lcd显示白屏的问题可以在类似startup_stm32f407xx.s里面修改Stack_Size EQU把它从0x0400改为0x00001000，这是因为栈太小了，cubemx生成的在cubemx里面改就行了
+在使用cubemx重新生成代码的时候，记得将Middlewares文件移出工程并保存，否则cubemx会删除掉文件夹
